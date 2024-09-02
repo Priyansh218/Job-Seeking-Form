@@ -238,15 +238,9 @@ const SignUpForm = () =>
       }
   
       try {
-        // const response = await fetch('https://job-seeking-form-server1.vercel.app/api/users/signup', {
-        //   method: 'POST',
-        //   body: formData,
-        // });
-
-        const response = await fetch('https://job-seeking-form-frontend.vercel.app/api/users/signup', {
+        const response = await fetch('https://job-seeking-form-server1.vercel.app/api/users/signup', {
           method: 'POST',
           body: formData,
-          credentials:'include'
         });
 
         if (response.ok) {
