@@ -12,6 +12,7 @@ const app = express();
 // Middleware
 app.use(cors( { 
   origin: ['http://localhost:3000','https://job-seeking-form-server1.vercel.app'],
+  methods:['POST','GET'],
   credentials: true,}))
 app.use(bodyParser.json());
 app.use('/uploads', express.static('uploads'));
