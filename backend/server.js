@@ -10,7 +10,9 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors( { origin: 'http://localhost:3000',credentials: true,}))
+app.use(cors( { 
+  origin: ['http://localhost:3000','https://job-seeking-form-server1-pzlcnwn6x-priyansh-dahakes-projects.vercel.app'],
+  credentials: true,}))
 app.use(bodyParser.json());
 app.use('/uploads', express.static('uploads'));
 
