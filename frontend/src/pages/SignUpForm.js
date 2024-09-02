@@ -246,6 +246,7 @@ const SignUpForm = () =>
         const response = await fetch('https://job-seeking-form-frontend.vercel.app/api/users/signup', {
           method: 'POST',
           body: formData,
+          credentials:'include'
         });
 
         if (response.ok) {
