@@ -14,10 +14,11 @@ const app = express();
 //   origin: ['http://localhost:3000','https://job-seeking-form-server.vercel.app'],
 //   methods:['POST','GET'],
 //   credentials: true,}))
-app.use(cors( { 
-  origin: 'https://job-seeking-form-server.vercel.app',
-  credentials: true,}))
-  
+// app.use(cors( { 
+//   origin: 'https://job-seeking-form-server.vercel.app',
+//   credentials: true,}))
+
+app.use(cors());
 app.use(bodyParser.json());
 app.use('/uploads', express.static('uploads'));
 
