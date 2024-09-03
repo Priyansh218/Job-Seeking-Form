@@ -242,7 +242,7 @@ const SignUpForm = () =>
           method: 'POST',
           body: formData,
         });
-
+        console.log(response)
         if (response.ok) {
           navigate("/success");
           // redirect to a success page
